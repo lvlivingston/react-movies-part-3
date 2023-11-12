@@ -1,3 +1,18 @@
-export default function ActorListPage() {
-    return <h1> Actor List Page </h1>;
+import ActorCard from "../../components/ActorCard/ActorCard";
+
+export default function ActorPage({ movies }) {
+  const actorList = movies.reduce((actors, m) => {
+    m.cast.forEach((a) => {
+      if (!actors.includes(a)) actors.push(a);
+    });
+    return actors;
+  }, []);
+
+  return (
+    <div>
+      {actorList.map((actor) => {
+        return <ActorCard key={actor} actor={actor} />;
+      })}
+    </div>
+  );
 }

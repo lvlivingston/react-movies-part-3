@@ -1,5 +1,4 @@
 import MovieCard from "../../components/MovieCard/MovieCard";
-// import MovieDetailPage from "../MovieDetailPage/MovieDetailPage";
 
 export default function MoviesListPage(props) {
   return (
