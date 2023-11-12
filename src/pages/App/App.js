@@ -8,7 +8,7 @@ import NavBar from "../../components/NavBar/NavBar";
 import { movies } from "../../data";
 
 function App() {
-  const [user, setUser] = useState({});
+  const [user, setUser] = useState(null);
 
   return (
     <main className="App">
@@ -17,7 +17,7 @@ function App() {
                 <NavBar user={user} />
                 <Routes>
                   <Route path="/" element={<MoviesListPage movies={movies}/>} />
-                  <Route path="/movies/:movieName" element={<MovieDetailPage />} />
+                  <Route path="/movies/:movieName" element={<MovieDetailPage movies={movies} />} />
                   <Route path="/actors" element={<ActorListPage />} />
                 </Routes>
               </>
