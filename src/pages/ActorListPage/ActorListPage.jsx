@@ -8,9 +8,11 @@ export default function ActorPage({ movies }) {
     return actors;
   }, []);
 
+  const sortedActorList = actorList.sort((a, b) => a.split(' ')[0].localeCompare(b.split(' ')[0]));
+
   return (
     <div>
-      {actorList.map((actor) => {
+      {sortedActorList.map((actor) => {
         return <ActorCard key={actor} actor={actor} />;
       })}
     </div>
