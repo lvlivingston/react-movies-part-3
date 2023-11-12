@@ -5,17 +5,18 @@ import LoginPage from "../LoginPage/LoginPage";
 import MovieDetailPage from "../MovieDetailPage/MovieDetailPage";
 import MoviesListPage from "../MoviesListPage/MoviesListPage";
 import NavBar from "../../components/NavBar/NavBar";
+import { movies } from "../../data";
 
 function App() {
   const [user, setUser] = useState({});
-  
+
   return (
     <main className="App">
       {user ? (
               <>
                 <NavBar user={user} />
                 <Routes>
-                  <Route path="/" element={<MoviesListPage />} />
+                  <Route path="/" element={<MoviesListPage movies={movies}/>} />
                   <Route path="/movies/:movieName" element={<MovieDetailPage />} />
                   <Route path="/actors" element={<ActorListPage />} />
                 </Routes>
