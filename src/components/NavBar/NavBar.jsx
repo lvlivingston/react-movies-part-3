@@ -5,7 +5,7 @@ export default function NavBar() {
   return (
     <nav>
       <Link to="/" className="NavText">Movies</Link>
-      <Link to="/actors" className="NavText">Actors</Link>
+      <Link to="/actors" className="NavText RightNav">Actors</Link>
     </nav>
   );
 }
