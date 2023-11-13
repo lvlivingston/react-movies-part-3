@@ -11,3 +11,7 @@ code {
     monospace;
 }
 
+.DivBackground {
+  background-color: black;
+  border-radius: 6px;
+}

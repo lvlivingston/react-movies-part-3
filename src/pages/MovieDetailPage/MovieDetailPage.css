@@ -1,0 +1,15 @@
+.Flex {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.Text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.Photo {
+    width: 30vw;
+}

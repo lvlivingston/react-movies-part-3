@@ -6,7 +6,7 @@ export default function ActorDetailPage({ movies }) {
     const actorMovies = movies.filter((movie) => movie.cast.includes(actorName));
 
     return (
-      <div>
+      <div className="DivBackground">
         <h2>Movies featuring {actorName}</h2>
         <ul>
           {actorMovies.map((movie) => (
