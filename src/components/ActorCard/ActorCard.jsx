@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 function getRandomNumber(min, max) {
     return Math.round(Math.random() * (max - min) + min);
   }
@@ -6,10 +8,14 @@ function getRandomNumber(min, max) {
     let num = getRandomNumber(250, 400);
   
     return (
-      <div>
+      <>
+      <Link to={`/actors/${actor}`}>
         <div>
-          <h1>{actor}</h1>
+            <div>
+            <h1>{actor}</h1>
+            </div>
         </div>
-      </div>
+      </Link>
+      </>
     );
   }
