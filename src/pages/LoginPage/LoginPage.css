@@ -9,8 +9,8 @@ main > div {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    min-height: 100vh; /* Ensures that the box covers the entire viewport height */
-    background-color: rgba(0, 0, 0, 0.5); /* Translucent black background */
+    min-height: 100vh; 
+    background-color: rgba(0, 0, 0, 0.5); 
     color: white;
 }
 
