@@ -9,9 +9,9 @@ function getRandomNumber(min, max) {
   
     return (
       <>
-      <Link to={`/actors/${actor}`}>
+      <Link to={`/actors/${actor}`} className="CardText">
         <div>
-            <div>
+            <div className="CardText">
             <h1>{actor}</h1>
             </div>
         </div>
