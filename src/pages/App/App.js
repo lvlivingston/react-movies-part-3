@@ -7,6 +7,7 @@ import ActorDetailPage from "../ActorDetailPage/ActorDetailPage";
 import MoviesListPage from "../MoviesListPage/MoviesListPage";
 import NavBar from "../../components/NavBar/NavBar";
 import { movies } from "../../data";
+import "../../index.css";
 
 function App() {
   const [user, setUser] = useState(null);

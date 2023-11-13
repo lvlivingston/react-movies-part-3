@@ -1,0 +1,63 @@
+body {
+    background-image: url('../../images/loginBackground.png');
+    background-size: cover;
+}
+
+main > div {
+    margin: 10vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; /* Ensures that the box covers the entire viewport height */
+    background-color: rgba(0, 0, 0, 0.5); /* Translucent black background */
+    color: white;
+}
+
+main > div > form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+main > div > form > input {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+main > div > form > button {
+    background: #FF4742;
+    border: 1px solid #FF4742;
+    border-radius: 6px;
+    box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-family: nunito,roboto,proxima-nova,"proxima nova",sans-serif;
+    font-size: 16px;
+    font-weight: 800;
+    line-height: 16px;
+    min-height: 40px;
+    outline: 0;
+    padding: 12px 14px;
+    text-align: center;
+    text-rendering: geometricprecision;
+    text-transform: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: middle;
+}
+    
+main > div > form > button:hover,
+main > div > form > button:active {
+    background-color: white;
+    background-position: 0 0;
+    color: #FF4742;
+}
+    
+main > div > form > button:active {
+    opacity: .5;
+}
